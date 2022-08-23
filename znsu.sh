@@ -1,3 +1,3 @@
 #!/bin/bash
-passwd=$(zenity --password)
+passwd=$(zenity --password --title=Authentication)
 echo $passwd | sudo -S -k $1 $2 $3 $4 $5 $6 $7 $8 $9
